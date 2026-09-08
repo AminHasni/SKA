@@ -1,0 +1,150 @@
+{
+  "app": {
+    "title": "شركة خليفي علاء",
+    "subtitle": "إدارة الأشغال والفواتير"
+  },
+  "loading": "جاري التحميل...",
+  "theme": {
+    "light": "الوضع الفاتح",
+    "dark": "الوضع الداكن"
+  },
+  "sidebar": {
+    "dashboard": "لوحة القيادة",
+    "fiches": "أوامر الشغل",
+    "factures": "الفواتير",
+    "switch_lang": "Français"
+  },
+  "dashboard": {
+    "title": "لوحة القيادة",
+    "subtitle": "نظرة عامة والوصول السريع للأعمال والفواتير.",
+    "quick_actions": "إجراءات سريعة",
+    "stats_overview": "إحصائيات عامة",
+    "btn_new_fiche": "أمر شغل جديد",
+    "btn_new_facture": "فاتورة جديدة",
+    "btn_view_fiches": "عرض الأوامر",
+    "btn_view_factures": "عرض الفواتير",
+    "sub_new_fiche": "برمجة تدخل جديد",
+    "sub_new_facture": "إصدار فاتورة جديدة",
+    "sub_total_fiches": "مجموع الأوامر",
+    "sub_total_factures": "مجموع الفواتير المسجلة",
+    "stat_ca_encaisse": "المداخيل المقبوضة",
+    "stat_factures_attente": "فواتير قيد الانتظار",
+    "stat_fiches_actives": "تدخلات جارية",
+    "stat_fiches_terminees": "تدخلات مكتملة",
+    "stat_total_factures": "مجموع الفواتير",
+    "stat_total_fiches": "مجموع أوامر الشغل",
+    "recent_fiches": "أحدث أوامر الشغل",
+    "recent_factures": "أحدث الفواتير",
+    "status_breakdown": "توزيع الأوامر حسب الحالة",
+    "revenue_breakdown": "الملخص المالي (الفواتير)",
+    "view_all": "عرض الكل",
+    "no_fiches": "لا توجد أوامر شغل مسجلة.",
+    "no_factures": "لا توجد فواتير مسجلة."
+  },
+  "fiches": {
+    "title": "أوامر الشغل",
+    "desc": "إدارة أوامر الشغل والتدخلات.",
+    "new": "أمر شغل جديد",
+    "edit": "تعديل أمر الشغل",
+    "details": "تفاصيل التدخل",
+    "metrage": "القياس / الكمية",
+    "cout": "السعر (التكلفة) بد.ت",
+    "search": "ابحث عن أمر، عميل...",
+    "status": {
+      "all": "كل الحالات",
+      "brouillon": "مسودة",
+      "planifiee": "مبرمجة",
+      "en_route": "في الطريق",
+      "en_cours": "بصدد الإنجاز",
+      "terminee": "مكتملة",
+      "annulee": "ملغاة"
+    },
+    "table": {
+      "numero": "الرقم",
+      "date": "التاريخ المبرمج",
+      "client": "العميل / المكان",
+      "team": "الفريق",
+      "statut": "الحالة",
+      "actions": "إجراءات",
+      "empty": "لا يوجد أوامر شغل."
+    },
+    "form": {
+      "num_fiche": "رقم أمر الشغل",
+      "client": "اسم العميل / الشركة",
+      "adresse": "عنوان الحضيرة / الموقع",
+      "date_prevue": "التاريخ المبرمج للتدخل",
+      "equipe": "الفريق المكلّف",
+      "nature_travaux": "طبيعة الأشغال / الوصف",
+      "remarques": "ملاحظات وتعليمات",
+      "equipements": "المعدات والمواد",
+      "add_equipement": "إضافة معدات",
+      "save": "حفظ أمر الشغل",
+      "cancel": "إلغاء"
+    }
+  },
+  "factures": {
+    "title": "الفواتير",
+    "desc": "متابعة الفواتير الصادرة بناءً على أوامر الشغل.",
+    "new": "فاتورة جديدة",
+    "details": "تفاصيل الفاتورة",
+    "total_encaisse": "إجمالي المقبوضات",
+    "en_attente": "في انتظار الدفع",
+    "brouillons": "مسودات للمراجعة",
+    "download_pdf": "تحميل ملف PDF",
+    "print": "طباعة الفاتورة",
+    "status": {
+      "brouillon": "مسودة",
+      "validee": "مؤكدة",
+      "envoyee": "مرسلة",
+      "payee": "خالصة / مدفوعة",
+      "annulee": "ملغاة"
+    },
+    "table": {
+      "numero": "رقم الفاتورة",
+      "date": "التاريخ",
+      "client": "العميل",
+      "fiche_ref": "مرجع الأمر",
+      "statut": "الحالة",
+      "montant": "المبلغ (TTC)",
+      "actions": "إجراءات",
+      "empty": "لا توجد فواتير."
+    },
+    "modal": {
+      "title": "فاتورة جديدة",
+      "empty_fiches": "لا توجد أوامر شغل «مكتملة» متاحة للفوترة. الرجاء إنهاء أمر شغل أولاً.",
+      "close": "إغلاق",
+      "select_fiche": "اختر أمر شغل مكتمل",
+      "choose_fiche": "-- اختر أمر شغل --",
+      "billing_mode": "طريقة الفوترة",
+      "mode_hourly": "حسب الساعة (الوقت الفعلي)",
+      "mode_fixed": "مبلغ جزافي (مباشر)",
+      "hourly_rate": "سعر الساعة (د.ت)",
+      "fixed_amount": "المبلغ الجزافي (د.ت)",
+      "cancel": "إلغاء",
+      "submit": "تأكيد وإصدار"
+    }
+  },
+  "common": {
+    "back": "رجوع",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "save": "حفظ",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "search": "بحث...",
+    "status": "الحالة",
+    "total": "المجموع",
+    "date": "التاريخ",
+    "dt": "د.ت",
+    "filters": "تصفية متقدمة",
+    "filter_client": "جميع العملاء",
+    "filter_status": "جميع الحالات",
+    "date_from": "من تاريخ",
+    "date_to": "إلى تاريخ",
+    "amount_min": "المبلغ الأدنى (د.ت)",
+    "amount_max": "المبلغ الأقصى (د.ت)",
+    "reset_filters": "إعادة ضبط التصفية",
+    "results_count": "نتيجة مطابقة",
+    "active_filters": "التصفيات النشطة"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "app": {
+    "title": "Société Khelifi Ala",
+    "subtitle": "Gestion de chantier & Factures"
+  },
+  "loading": "Chargement en cours...",
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre"
+  },
+  "sidebar": {
+    "dashboard": "Tableau de bord",
+    "fiches": "Fiches de travail",
+    "factures": "Factures",
+    "switch_lang": "العربية"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Vue d'ensemble et accès rapide aux interventions & factures.",
+    "quick_actions": "Actions Rapides",
+    "stats_overview": "Statistiques Globales",
+    "btn_new_fiche": "Nouvelle Fiche",
+    "btn_new_facture": "Nouvelle Facture",
+    "btn_view_fiches": "Voir Fiches",
+    "btn_view_factures": "Voir Factures",
+    "sub_new_fiche": "Planifier une intervention",
+    "sub_new_facture": "Créer une facturation",
+    "sub_total_fiches": "fiches au total",
+    "sub_total_factures": "factures enregistrées",
+    "stat_ca_encaisse": "Chiffre d'Affaires Encaissé",
+    "stat_factures_attente": "Factures en Attente",
+    "stat_fiches_actives": "Interventions Actives",
+    "stat_fiches_terminees": "Interventions Terminées",
+    "stat_total_factures": "Total Factures",
+    "stat_total_fiches": "Total Fiches de Travail",
+    "recent_fiches": "Dernières Fiches de Travail",
+    "recent_factures": "Dernières Factures",
+    "status_breakdown": "Répartition par Statut (Fiches)",
+    "revenue_breakdown": "Aperçu Financier (Factures)",
+    "view_all": "Tout voir",
+    "no_fiches": "Aucune fiche de travail enregistrée.",
+    "no_factures": "Aucune facture enregistrée."
+  },
+  "fiches": {
+    "title": "Fiches de travail",
+    "desc": "Gestion des ordres de travail et des interventions.",
+    "new": "Nouvelle Fiche",
+    "edit": "Modifier la fiche",
+    "details": "Détails de l'intervention",
+    "metrage": "Métrage / Quantité",
+    "cout": "Prix (Coût) en DT",
+    "search": "Rechercher une fiche, un client...",
+    "status": {
+      "all": "Tous les statuts",
+      "brouillon": "Brouillon",
+      "planifiee": "Planifiée",
+      "en_route": "En route",
+      "en_cours": "En cours",
+      "terminee": "Terminée",
+      "annulee": "Annulée"
+    },
+    "table": {
+      "numero": "Numéro",
+      "date": "Date Prévue",
+      "client": "Client / Lieu",
+      "team": "Équipe",
+      "statut": "Statut",
+      "actions": "Actions",
+      "empty": "Aucune fiche trouvée."
+    },
+    "form": {
+      "num_fiche": "N° de Fiche de Travail",
+      "client": "Nom du Client / Société",
+      "adresse": "Adresse du Chantier",
+      "date_prevue": "Date Prévue d'Intervention",
+      "equipe": "Équipe Affectée",
+      "nature_travaux": "Nature des Travaux / Description",
+      "remarques": "Remarques & Instructions",
+      "equipements": "Équipements & Matériaux",
+      "add_equipement": "Ajouter un équipement",
+      "save": "Enregistrer la Fiche",
+      "cancel": "Annuler"
+    }
+  },
+  "factures": {
+    "title": "Factures",
+    "desc": "Suivi des factures générées à partir des fiches de travail.",
+    "new": "Nouvelle Facture",
+    "details": "Détails de la Facture",
+    "total_encaisse": "Total Encaissé",
+    "en_attente": "En Attente de Paiement",
+    "brouillons": "Brouillons à Valider",
+    "download_pdf": "Télécharger le PDF",
+    "print": "Imprimer la Facture",
+    "status": {
+      "brouillon": "Brouillon",
+      "validee": "Validée",
+      "envoyee": "Envoyée",
+      "payee": "Payée",
+      "annulee": "Annulée"
+    },
+    "table": {
+      "numero": "N° Facture",
+      "date": "Date",
+      "client": "Client",
+      "fiche_ref": "Fiche Réf.",
+      "statut": "Statut",
+      "montant": "Montant TTC",
+      "actions": "Actions",
+      "empty": "Aucune facture trouvée."
+    },
+    "modal": {
+      "title": "Nouvelle Facture",
+      "empty_fiches": "Aucune fiche de travail « Terminée » disponible pour facturation. Veuillez d'abord clôturer une fiche.",
+      "close": "Fermer",
+      "select_fiche": "Sélectionner une fiche terminée",
+      "choose_fiche": "-- Choisir une fiche --",
+      "billing_mode": "Mode de facturation",
+      "mode_hourly": "Horaire (selon durée réelle)",
+      "mode_fixed": "Forfaitaire (prix direct)",
+      "hourly_rate": "Tarif horaire (DT)",
+      "fixed_amount": "Montant forfaitaire (DT)",
+      "cancel": "Annuler",
+      "submit": "Valider et Générer"
+    }
+  },
+  "common": {
+    "back": "Retour",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "save": "Enregistrer",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "search": "Rechercher...",
+    "status": "Statut",
+    "total": "Total",
+    "date": "Date",
+    "dt": "DT",
+    "filters": "Filtres avancés",
+    "filter_client": "Tous les clients",
+    "filter_status": "Tous les statuts",
+    "date_from": "Du",
+    "date_to": "Au",
+    "amount_min": "Montant min (DT)",
+    "amount_max": "Montant max (DT)",
+    "reset_filters": "Réinitialiser les filtres",
+    "results_count": "résultat(s) trouvé(s)",
+    "active_filters": "Filtres actifs"
+  }
+}
