@@ -10,7 +10,7 @@ export default function Login() {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
-  const { login } = useAuth();
+  const { login, loginDemo } = useAuth();
   const { language, setLanguage, t } = useLanguage();
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,20 +32,9 @@ export default function Login() {
     }
   };
 
-  const handleQuickAdminLogin = async () => {
-    setUsername("admin");
-    setPassword("admin123");
-    setError(null);
-    setSubmitting(true);
-
-    const res = await login("admin", "admin123");
-    setSubmitting(false);
-
-    if (res.success) {
-      navigate(from, { replace: true });
-    } else {
-      setError(res.error || (language === 'ar' ? 'معلومات الدخول غير صحيحة' : 'Identifiants administrateur incorrects'));
-    }
+  const handleQuickDemoLogin = (role: "admin" | "agent" = "admin") => {
+    loginDemo(role);
+    navigate(from, { replace: true });
   };
 
   return (
@@ -77,28 +66,30 @@ export default function Login() {
           </div>
         </div>
 
-        {/* Quick Admin Login Button */}
-        <button
-          type="button"
-          onClick={handleQuickAdminLogin}
-          disabled={submitting}
-          className="w-full p-4 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-950/70 border border-emerald-200 dark:border-emerald-800/60 rounded-xl text-start transition-all group flex items-center justify-between"
-        >
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
-              <KeyRound size={18} />
+        {/* Quick Demo Login Cards */}
+        <div className="space-y-2">
+          <button
+            type="button"
+            onClick={() => handleQuickDemoLogin("admin")}
+            disabled={submitting}
+            className="w-full p-4 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-950/70 border border-emerald-200 dark:border-emerald-800/60 rounded-xl text-start transition-all group flex items-center justify-between"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                <KeyRound size={18} />
+              </div>
+              <div>
+                <span className="block text-xs font-bold text-emerald-900 dark:text-emerald-200">
+                  {language === 'ar' ? '⚡ دخول سريع - حساب ديمو مدير (نقرة واحدة)' : '⚡ Compte Démo Administrateur (Accès Direct 1-Clic)'}
+                </span>
+                <span className="block text-[11px] text-emerald-700 dark:text-emerald-400">
+                  {language === 'ar' ? 'دخول فوري بدون حاجة للاتصال بالشبكة' : 'Connexion instantanée sans erreur réseau'}
+                </span>
+              </div>
             </div>
-            <div>
-              <span className="block text-xs font-bold text-emerald-900 dark:text-emerald-200">
-                {language === 'ar' ? '⚡ تسجيل دخول سريع كمدير (نقرة واحدة)' : '⚡ Connexion Rapide Administrateur (1 Clic)'}
-              </span>
-              <span className="block text-[11px] text-emerald-700 dark:text-emerald-400">
-                {language === 'ar' ? 'دخول مباشر بحساب admin' : 'Accès direct avec le compte admin'}
-              </span>
-            </div>
-          </div>
-          <ArrowRight size={18} className={`text-emerald-700 dark:text-emerald-300 group-hover:translate-x-1 transition-transform ${language === 'ar' ? 'rotate-180' : ''}`} />
-        </button>
+            <ArrowRight size={18} className={`text-emerald-700 dark:text-emerald-300 group-hover:translate-x-1 transition-transform ${language === 'ar' ? 'rotate-180' : ''}`} />
+          </button>
+        </div>
 
         {/* Login Form */}
         <div className="bg-white dark:bg-[#161615] border border-stone-200 dark:border-stone-800/80 rounded-2xl p-6 md:p-8 shadow-sm space-y-5">
@@ -159,10 +150,10 @@ export default function Login() {
           {/* Credentials Info Footer */}
           <div className="pt-4 border-t border-stone-100 dark:border-stone-800/80 text-center space-y-1 text-[11px] text-stone-400">
             <p className="font-medium text-stone-600 dark:text-stone-300">
-              {language === 'ar' ? 'حساب مدير النظام الرئيسي:' : 'Compte Administrateur Unique :'}
+              {language === 'ar' ? 'حساب الديمو والمدير:' : 'Identifiants de Démo / Admin :'}
             </p>
             <p className="font-mono text-stone-500 dark:text-stone-400">
-              {language === 'ar' ? 'اسم المستخدم: admin | كلمة السر: admin123' : 'Identifiant: admin | Mot de passe: admin123'}
+              {language === 'ar' ? 'admin / admin123  أو  demo / demo123' : 'admin / admin123  ou  demo / demo123'}
             </p>
           </div>
         </div>

@@ -2,5 +2,7 @@
   "name": "Société Khelifi Ala",
   "description": "Application web de gestion des équipements et de génération de factures de maintenance (horaire ou forfaitaire).",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
